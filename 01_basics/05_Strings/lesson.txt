@@ -1,0 +1,57 @@
+Strings
+    - ''
+    - ""
+    - `` 
+    
+    1. Concatenation : " " + " "
+            let firstName = 'Md.'
+            let lastName = 'Hossain'
+            let fullName = firstName.concat(lastName)
+
+    2. Append
+            let firstName += 'Shamim'
+            console.log(firstName) // Md. Shamim
+
+    3. Length
+        fullName.Length
+
+    4. Cases
+        console.log(lastName.toLowerCase())
+        console.log(lastName.toUpperCase())
+
+    5. Slice
+        console.log(lastName.slice(1, 4)) // Hoss
+
+    6. Split & Join
+        console.log(lastName.Split('')) // gives an array : [H, o, s, s, a, i, n]
+        console.log(lastName.Join(''))
+        console.log(lastName.Split('').Join('')) // first Split and then Joins back 
+
+    7. Includes 
+        console.log(lastName.Includes('a')) // true or false
+
+    8. Trim
+        console.log(lastName.Trim()) // removes unnecessary spaces 
+
+    9. ``
+        let name = `Md.                    Shamim 
+                        Hossain` 
+        -- backticks allow you to write like this 
+
+Convert String to Number
+    - let money = '50'
+        1. money = parseInt(money)
+        2. money = +money
+        3. money = Number(money) / constructor way
+    
+Convert Number to String
+    - let money = 50
+        1. money = money.toString()
+        2. money = String(money) / constructor way
+
+        console.log (money)
+        console.log (typeof money)
+
+Convert String to Decimal
+    - let money = '50'
+        1. money = parseFloat(money)

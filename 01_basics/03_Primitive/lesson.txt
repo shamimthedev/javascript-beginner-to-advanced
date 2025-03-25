@@ -1,0 +1,7 @@
+Primitive
+    1. Number
+    2. Boolean 
+        - falsy 
+            -- false, 0, -0, NaN, undefined, null
+        - null : can be set by developers
+        - undefined : can be set by js compilers

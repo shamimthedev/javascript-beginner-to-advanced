@@ -1,0 +1,12 @@
+Switch Statement
+    - switch (key){
+        case value:
+            print
+            break;
+        case value:
+            print
+            break;
+        default:
+            print;
+    }
+

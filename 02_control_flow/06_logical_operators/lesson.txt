@@ -1,0 +1,9 @@
+1. Logical AND (&&)
+    -> TRUE if both the operands/boolean values are true, else evaluates to FALSE  
+
+2. Logical OR (||)
+    -> TRUE if either of the operands/boolean values is true, 
+        evaluates to false if both are false    
+
+3. LOgical NOT (!)
+    -> TRUE if the operands is false or vice-versa

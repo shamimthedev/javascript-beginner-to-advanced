@@ -1,0 +1,12 @@
+Comparison Operators
+    - Relational Operators
+        > 
+        <
+        >= greater than or equal 
+        <= less than or equal 
+
+    - Equality Operators
+        === strict equality operator (type + value)
+        !== strict non-equality operator (type + value)
+        == lose equality operator (value)
+        != lose not-equality operator (value)

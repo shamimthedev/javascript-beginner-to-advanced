@@ -1,0 +1,8 @@
+Do-While loop
+
+    let i = 1
+
+        do{
+            console.log('Hello there', i)
+            i++
+        } while(i <= 5);

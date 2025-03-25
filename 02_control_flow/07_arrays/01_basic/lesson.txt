@@ -1,0 +1,14 @@
+Arrays 
+    - 0 index based
+    - empty array: []
+
+    1. Accessing items from an array
+        const myArr = ['eat', 'sleep', 'code', 'pray']
+
+        console.log(myArr[0]) // eat 
+        console.log(myArr[2]) // code 
+
+    2. Two Dimension Array / Nested Array
+        const myArr = ['one', ['two', 'three'], true, false]
+
+        console.log(myArr[1][0]) // two 

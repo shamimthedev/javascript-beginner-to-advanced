@@ -1,0 +1,7 @@
+While loop
+    let i = 10
+
+    while(i < 15){
+        console.log('Hello there')
+        i++ // never forget to write this or your code will run for infinite
+    }
