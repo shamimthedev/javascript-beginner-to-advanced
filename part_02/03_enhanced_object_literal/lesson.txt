@@ -1,0 +1,53 @@
+Enhanced Object Literals
+    - Introduced in ES6, are a set of enhancements to the syntax for defining objects in JavaScript. These enhancements make it more convenient and concise to define object properties and methods. 
+
+    function user(name, age, work){
+        return {
+            name: name,
+            age: age,
+            work: work
+        }
+    }
+
+    const shamim = user('Shamim', 28, 'developer')
+    console.log(shamim)
+
+    Enhancing this could be written as:
+        1. function user(name, age, work){
+            return {
+                name,
+                age,
+                work  // if the key-value pairs are the same, one can be omitted
+            }
+        }
+
+        const shamim = user('Shamim', 28, 'developer')
+        console.log(shamim)
+
+        2. for a method:
+            function user(name, age, work){
+                return {
+                    name,
+                    age,
+                    work,
+                    intro: function(){
+                        console.log(`Hello! I'm ${name}. I'm ${age} years old and I'm a ${work}`) 
+                    }
+                }
+            }
+
+            Enhancing this:
+
+                function user(name, age, work){
+                    return {
+                        name,
+                        age,
+                        work,
+                        intro: () => {
+                            console.log(`Hello! I'm ${name}. I'm ${age} years old and I'm a ${work}`) 
+                        }
+                    }
+                }
+
+                const shamim = user('Shamim', 28, 'developer')
+                console.log(shamim.intro())

@@ -1,0 +1,21 @@
+Arrow Functions
+    - Also known as fat arrow functions, are a concise and shorter way to define functions in JavaScript. They were introduced in ECMAScript 6 (ES6) and provide a more compact syntax compared to traditional function expressions. 
+
+        function greet(name){
+            return `Hello ${name}`
+        }
+
+        console.log(greet('Md.'))
+
+        Making it a arrow function: 
+            1. greet = (name) => {
+                return `Hello ${name}`
+            }
+
+            2. greet = name => `Hello ${name}`   
+                // for one parameter, can ommit the (), return keyword and {}.
+
+            3. const greet = name => `Hello ${name}`
+            4. const greet = ()=> `Hello ${name}`
+                // when there is no parameter
+        
