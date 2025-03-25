@@ -1,0 +1,40 @@
+Scope in Function
+    - Scope in JavaScript refers to the current context of code, which determines the accessibility of variables to JavaScript.
+    - There are two types of scopes in JavaScript.
+    - Global Scope: Variables are those declared outside of a block.
+    - Local Scope: Variables are those declared inside of a block.
+
+    let textMessage = 'hi' // global variable. can be accessed anywhere
+    console.log(textMessage)
+
+    function greet(){
+        let textMessage = 'hello' // local variable. available only inside this code-block
+        console.log(textMessage) // print: hello 
+    }
+    function greetings(){ 
+        console.log(textMessage) // print: hi (as there isn't any local variable)  
+    }
+
+Methods
+    - two ways of creating a method inside an object
+
+    1. function greet(){
+        return `Hello, my name is ${person.name} & I'm a ${person.profession}
+    }
+
+        const person = {
+            name: 'Md.',
+            profession: 'Developer',
+            greet //this is a method, a function inside an object
+        }
+
+        console.log(person.greet());
+
+    2. const person = {
+            name: 'Md.',
+            profession: 'Developer',
+            greet: function (){
+                return `Hello, my name is ${person.name} & I'm a ${person.profession}
+            }
+        }
+        console.log(person.greet());

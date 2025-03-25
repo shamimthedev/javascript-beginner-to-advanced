@@ -1,0 +1,42 @@
+Function
+
+    6. Function Declaration 
+        function greet(name){
+            console.log(`Hello ${name}`)
+        }
+        greet('Md.')
+
+        - can be called/runned/executed before writing the function. Like:
+            greet('Md.')
+            function greet(name){
+                console.log(`Hello ${name}`)
+            }
+      
+    7. Function Expression
+        const greetings = function (user){
+            console.log(`Hello ${user}`)
+        }
+        greetings('Hossain')
+
+        - Function Expression: A function which we save in a variable.
+        - Can't be called/runned/executed before writing the function. Like:
+            greetings('Hossain') // calling first and then writing the function. give error. 
+                const greetings = function (name){
+                console.log(`Hello ${name}`)
+            }
+        
+    8. Callback Function
+        - When we provide function as an (argument) to other function that function is known as callback function.
+
+        showCallFunc(function() {...})
+
+        function greet(name, fn){
+            console.log(`Hello ${name}`)
+            fn()
+        }
+
+        function fn(){
+            console.log('I am a callback function')
+        }
+
+        greet('Hossain', fn)

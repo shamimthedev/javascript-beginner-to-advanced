@@ -1,0 +1,34 @@
+Function
+    - A function is a block of code that performs a specific task.
+    - Function makes the code reusable. You can declare it once and use it multiple times.
+    - Function makes the program easier as each small task is divided into a function.
+    - Function increases readability.
+    - DRY - Don't Repeat Yourself.
+    - function name(parameterIfAny) {...}
+
+    1. Declaring a function
+        function greet(){
+            console.log('Hello there')
+        }
+    2. Calling the function
+        greet()
+            - call, run or execute // without calling/running/executing, the function won't work. 
+
+    3. Taking parameter 
+        function greet(name){
+            console.log(`Hello ${name}`)
+        }
+
+        - Parameter / also calls local variable 
+    
+    4. Passing Argument 
+        greet('Shamim') // Hello Shamim 
+        greet('Hossain') // Hello Hossain
+
+    5. return keyword in function
+        function add(x, y){
+            return x + y // returns/give some sort of data from a function
+        } 
+
+        add(10, 12) 
+  

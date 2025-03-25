@@ -1,1 +1,19 @@
 Object
+    - const myObj = {
+        firstname: 'Md.',
+        lastname: 'Hossain',
+        location: ['Jashore', 'Khulna'],
+        isDeveloper: true
+    }
+
+    - Accessing properties from Object
+        console.log(myObj.firstname) // dot notation
+        console.log(myObj['firstname']) // strings needed if used [] notation 
+
+    - Updating properties
+        myObj.lastname = Shamim
+        console.log(myObj)
+
+    Adding new properties
+        myObj.age = 28
+        console.log(myObj.age) // 28
