@@ -1,0 +1,25 @@
+Ternary Operator
+  - The ternary operator in JavaScript is a concise way of writing conditional expressions. It is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), an expression to execute if the condition is true, followed by a colon (:), and an expression to execute if the condition is false.
+  - condition ? exprIfTure : exprIfFalse;
+
+    let password = 8
+    function passChecker(ps){
+      if(ps === 8){
+        console.log(`Strong password`)
+      } else{
+        console.log(`Password should be 8 characters`)
+      }
+    }
+
+    const res = passChecker(password)
+    console.log(res)
+
+    Using ternary operator:
+      // function passChecker(ps){
+      //  if(ps === 8){
+      //    return `Strong password`
+      //  } else{
+      //    return `Password should be 8 characters`
+      //  }
+          return ps === 8 ? `Strong password` : `Password should be 8 characters`
+      }
