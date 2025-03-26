@@ -1,0 +1,92 @@
+Destructuring
+    - Destructuring allows us to 'unpack' values from data-structures (Arrays, objects) into separate distinct variables.
+    
+      Array
+        - const arr = ["red", "green", "blue"];
+
+            const [red, green, blue] = arr; // here red, green, blue are variables that stores the value from the array
+            const [a, b, c] = arr; // for array destructuring the name could be anything
+
+            console.log(red); // red 
+            console.log(a); //red 
+
+            const [a, , b] = arr // for skipping any items from the array use commas
+            const [a, ...b] = arr // first one assigned to a, and the rest in b 
+        
+       2. function fn(){
+            return [1, 2]
+            }
+
+            const [x, y] = fn() 
+            console.log(x)
+
+
+      Object 
+        - In object destructuring the order doesn't matter but the name does matter.
+
+        const user = {name: 'Mizu', age: 28}
+
+        const {name} = user
+        console.log(name)
+
+        2. Renaming
+
+        const {name: userName, age: userAge} = user // now name will be userName
+
+        3. obj destructuring and rest operator 
+
+          const {a, b, ...rest} = {a: 100, b: 200, c: 300, d: 400}
+
+          console.log(a)
+          console.log(rest)
+
+      Function
+        - const person = {
+          name: 'Mizu',
+          age: 25,
+          gender: 'male'
+        }
+
+        function personInfo(person){
+          console.log(`Name: ${person.name}`)
+          console.log(`Name: ${person.age}`)
+          console.log(`Name: ${person.gender}`)
+        }
+
+        personInfo(person)
+
+        Destructuring it:
+            function personInfo({name, age, gender}){
+              console.log(`Name: ${name}`);
+              console.log(`Age: ${age}`);
+              console.log(`Gender: ${gender}`);
+          }
+
+          personInfo(person)
+
+      2. Renaming
+
+        const movie = {
+          title: 'Titanic',
+          year: 1995,
+          lang: 'English'
+        }
+
+          function titanic({title, year: releaseYear, lang}){
+            console.log(`${title} ${releaseYear}`)
+          }
+
+          titanic(movie)
+
+
+    Nested Destructuring
+      const movies = [
+        {name: 'Titanic', lang: 'English'},
+        {name: 'Kung Fu', lang: 'China'},
+        {name: 'Anwar', lang: 'Bengali'},
+        {name: 'Old Boy', lang: 'Korean'},
+      ]
+
+      const [, , {name: movieName}] = movies 
+
+      console.log(movieName)
